@@ -1,0 +1,87 @@
+section.section-keyvisual
+  .wrapper
+    h2.keyvisual-title A lifetime of discounts? It's Genius.
+    p.keyvisual-text Get rewarded for your travels - unlock instant savings of 10% or more with a free Booking.com account
+    .search-form-wrapper
+      form.search-form
+        label.form-wrap
+          i.fa-solid.fa-magnifying-glass
+          input.keyword-input(name='keyword' type='text' placeholder='Tìm kiếm theo địa điểm')
+        //
+          <ul class="type-list">
+          <li class="type-item">type 1</li>
+          <li class="type-item">type 2</li>
+          <li class="type-item">type 3</li>
+          </ul>
+
+section.section-browser
+  .wrapper
+    h2.section-title Browse by property type
+    .product-list-wrapper
+      ul.product-list.js-slider
+        each i in Array(6)
+          li.product-item
+            a.product-link(href='#')
+              figure.product-image
+                img(src='https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=' alt='')
+              h3.name Ten san pham
+              p.detail chi tiet
+
+section.section-banner
+  .wrapper
+    h2.section-title Cities
+    .banner-wrapper
+      .banner-list
+        each i in Array(2)
+          a.banner-item(href='#')
+            h3.banner-title Ho Chi Minh City
+            p.banner-description mo ta chi tiet
+      .banner-list
+        each i in Array(3)
+          a.banner-item(href='#')
+            h3.banner-title Ho Chi Minh City
+            p.banner-description mo ta chi tiet
+
+section.section-news
+  .wrapper
+    h2.section-title Daily news
+    .news-wrapper
+      ul.news-list
+        each i in Array(4)
+          a.news-item(href='#')
+            h3.news-title The top 5 cities for vegan travelers
+            p.news-description Vegan-friendly eateries abound in these travel destinations…
+
+section.section-ads
+  .wrapper
+    h2.hidden tieu de quang cao
+    img.banner-ads(src='/src/img/ads1.jpg' alt='tieu de quang cao' width='1200' height='339')
+
+section.section-news
+  .wrapper
+    h2.section-title Daily news
+    .news-wrapper
+      ul.news-list
+        each i in Array(4)
+          a.news-item(href='#')
+            h3.news-title The top 5 cities for vegan travelers
+            p.news-description Vegan-friendly eateries abound in these travel destinations…
+
+section.section-products
+  .wrapper
+    .sidebar
+    .common-list
+      each i in Array(4)
+        .list-item
+          a.item-image.left(href='#')
+            img(src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&o=&s=1" alt="")
+          .right
+            a.item-name(href='#')
+              h3 The Arrivals Tower-Near Airport-10 stars
+            .address-info
+              span.address Phu Nhuan, Ho Chi Minh City
+              a.map-link(href='#') Show on map
+              span.distance 3.7 km from center
+            .item-description Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...
+      img.banner-ads(src='/src/img/ads1.jpg' alt='tieu de quang cao' width='100%' height='')
+

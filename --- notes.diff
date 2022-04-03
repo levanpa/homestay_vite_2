@@ -1,0 +1,52 @@
+--- notes.diff
+
+homestay website for hung
+npm run dev
+
+
+
+--- config
+- vite + vanilla js
+- sass
+- pug
+- multi page
+
+
+
+--- giao diện
+- banner kv
+- khung search
+- danh sách sp
+
+
+
+
+--- tính năng
+- tìm kiếm theo: địa điểm
+- dẫn link tới fb
+- đặt trước
+- đăng kí theo sdt, họ tên
+- nút messenger
+- thanh toán chuyển khoản
+- thanh toán khi nhận phòng
+- đặt cọc?
+
+
+
+--- trang
+- trang chủ
+- trang chi tiết sp
+- trang quản lý phòng đã đặt
+- trang thanh toán
+- trang user
+- trang đăng ký đăng nhập
+
+
+
+--- tìm kiếm theo
+- vị trí
+- ngày nhận phòng
+- ngày trả phòng
+- số giường
+- tiện nghi? --- máy lạnh, tivi, tủ lạnh, ban công
+

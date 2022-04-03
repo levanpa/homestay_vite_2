@@ -1,0 +1,158 @@
+section
+  // margin-bottom: 20px
+  padding: 30px 0
+
+.section-title
+  margin-bottom: 30px
+  font-size: 20px
+
+// section-keyvisual
+.section-keyvisual
+  padding-top: 100px
+  background-color: $color1
+  color: #fff
+  .keyvisual-title
+    margin-bottom: 10px
+    font-size: 50px
+    font-weight: 700
+  .keyvisual-text
+    margin-bottom: 100px
+    font-size: 20px
+
+.search-form-wrapper
+  background-color: #fff
+  input
+    min-width: 500px
+    padding: 14px 30px 14px 38px
+  .form-wrap
+    display: inline-block
+    height: 50px
+    position: relative
+    border: 2px solid #fa0
+    i
+      position: absolute
+      top: 50%
+      left: 10px
+      transform: translateY(-50%)
+      color: #333
+
+// section-browser
+.section-browser
+  // nho xoa
+  .product-list
+    display: flex
+    flex-wrap: wrap
+  .product-item
+    width: 200px
+    padding: 0 10px
+    .name
+      font-size: 20px
+      font-weight: 700
+    .detail
+      color: $color2
+  .product-image
+    width: 100%
+    height: 180px
+    margin-bottom: 10px
+
+// section-banner
+.section-banner
+  .banner-list
+    display: flex
+    margin-bottom: 10px
+  .banner-item
+    display: block
+    flex: 1
+    height: 300px
+    margin: 0 5px
+    padding: 20px
+    position: relative
+    background: url(https://cf.bstatic.com/xdata/images/city/540x270/689874.webp?k=5a29b0d987e962b9ce2c78ae5dae52d02fb2ed959b1e2b00faf022306e103f8b&o=) center/cover no-repeat
+    &::before
+      width: 400px
+      height: 50px
+      position: absolute
+      top: 0
+      left: 0
+      background-color: #000
+  .banner-title
+    font-size: 24px
+    color: #fff
+    font-weight: 700
+  .banner-description
+    color: #eee
+
+// section-news
+.section-news
+  background-color: #f3f3f3
+  .news-list
+    display: flex
+    margin-bottom: 10px
+  .news-item
+    display: inline-flex
+    flex-direction: column
+    justify-content: flex-end
+    flex: 1
+    height: 300px
+    margin: 0 5px
+    padding: 20px
+    position: relative
+    background: url(https://cf.bstatic.com/xdata/images/xphoto/540x405/144594760.webp?k=e9c1351f708bacdc0d1042d71808fdf01fc568224f3c222eef1daa9ccbc2b76a&o=) center/cover no-repeat
+  .news-title
+    font-size: 20px
+    color: #fff
+    font-weight: 700
+  .news-description
+    color: #eee
+
+// section-ads
+.section-ads
+  padding: 0
+  background-color: #ffb301
+  .banner-ads
+    width: 100%
+
+// section-products
+.section-products
+  display: none
+  .wrapper
+    display: flex
+  .sidebar
+    flex: 0 0 500px
+    background: linear-gradient(to bottom,#febb02 0,#febb02 100%)
+.common-list
+  margin-bottom: -20px
+  .list-item
+    display: flex
+    margin-bottom: 20px
+    padding: 16px
+    border: 1px solid $color2
+  // .left
+  .right
+    flex: 1
+  // .item-link
+  .item-image
+    flex: 0 0 200px
+    margin-right: 20px
+  .item-name
+    display: block
+    margin-bottom: 12px
+    color: $color1
+    font-size: 20px
+    font-weight: 700
+    &:hover
+      color: #bc5b01
+  .address-info
+    display: flex
+    gap: 15px
+    margin-bottom: 10px
+  .address
+    font-size: 14px
+  .map-link
+    font-size: 14px
+    color: $color1
+  .distance
+    font-size: 14px
+  .item-description
+    font-size: 14px
+    color: #555

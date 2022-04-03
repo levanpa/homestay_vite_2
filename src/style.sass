@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap')
+@import css/config.sass
+
+// reset
+*,
+*::before,
+*::after
+  margin: 0
+  padding: 0
+  line-height: normal
+  letter-spacing: 0
+  box-sizing: border-box
+  font-size: 16px
+
+a
+  color: #333
+  text-decoration: none
+  transition: opacity 0.25s ease
+  &:hover
+    opacity: 0.8
+
+ul, ol, li
+  list-style: none
+
+input, button, select, textarea
+  appearance: none
+  border: none
+
+// setup
+html
+  scroll-behavior: smooth
+
+body
+  font-family: $primary-font
+  font-size: 16px
+  line-height: 1.4
+
+.hidden
+  display: none
+
+.wrapper
+  max-width: 1200px
+  margin: 0 auto
+
+img
+  max-width: 100%
+  height: auto
+
+// header
+@import css/header.sass
+
+// home
+@import css/home.sass
