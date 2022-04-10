@@ -1,5 +1,5 @@
 mixin relatedItem()
-  li.related-item
+  li.related-item.wow.fade-in(data-wow-offset="100")
     .left
       a.related-image(href='#')
         img(src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150")
@@ -33,7 +33,7 @@ mixin relatedItem()
       p.product-description Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat. Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.
       iframe.product-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.764190505612!2d107.2311777!3d10.661684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317509f206a02233%3A0x9bd72a12c653bc88!2zVOG6oXAgaMOzYSBUaGluaA!5e0!3m2!1sen!2s!4v1648970817207!5m2!1sen!2s" allowfullscreen="" loading="lazy")
 
-    .utility-wrapper
+    .utility-wrapper.wow.fade-in(data-wow-offset="100")
       h3.utility-title Tiện nghi khách sạn
       .inner-wrapper
         ul.basic-info
@@ -72,7 +72,7 @@ mixin relatedItem()
             i.fa-solid.fa-tv
             span Phòng tắm vòi sen
 
-    .nearby-wrapper
+    .nearby-wrapper.wow.fade-in(data-wow-offset="100")
       h3.nearby-title Địa điểm lân cận
       ul.nearby-list
         each i in Array(2)
@@ -96,16 +96,16 @@ mixin relatedItem()
       ul.related-list
         each i in Array(3)
           +relatedItem()
-        li
+        li.wow.fade-in(data-wow-offset="100")
           a.banner-ads(href='#')
             img(src="/src/img/related-banner.jpg" alt="" width="400" height="150")
         each i in Array(3)
           +relatedItem()
-        li
+        li.wow.fade-in(data-wow-offset="100")
           a.banner-ads(href='#')
             img(src="/src/img/related-banner-02.jpg" alt="" width="400" height="438")
 
-  .feedback-wrapper
+  .feedback-wrapper.wow.fade-in(data-wow-offset="100")
     .overall-feedback
       span.overall-score 9.0
       ul.score-detail

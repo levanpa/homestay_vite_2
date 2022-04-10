@@ -4,15 +4,12 @@ section.section-keyvisual
     p.keyvisual-text Get rewarded for your travels - unlock instant savings of 10% or more with a free Booking.com account
     .search-form-wrapper
       form.search-form
-        label.form-wrap
-          i.fa-solid.fa-magnifying-glass
+        label.input-wrap
+          i.search-icon.fa-solid.fa-magnifying-glass
           input.keyword-input(name='keyword' type='text' placeholder='Tìm kiếm theo địa điểm')
-        //
-          <ul class="type-list">
-          <li class="type-item">type 1</li>
-          <li class="type-item">type 2</li>
-          <li class="type-item">type 3</li>
-          </ul>
+        label.date-picker
+          i.date-icon.fa-solid.fa-calendar-days
+          input.date-picker-input.js-date-picker(name='checkin-date' type='text' placeholder='Checkin - checkout')
 
 section.section-browse.hidden
   .wrapper
@@ -83,5 +80,5 @@ section.section-products
               a.map-link(href='#') Show on map
               span.distance 3.7 km from center
             .item-description Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...
-      img.banner-ads(src='/src/img/ads1.jpg' alt='tieu de quang cao' width='100%' height='')
+      img.banner-ads(src='/src/img/ads1.jpg' alt='tieu de quang cao' width='700' height='195')
 
