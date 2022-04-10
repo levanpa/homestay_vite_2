@@ -14,20 +14,20 @@ section.section-keyvisual
           <li class="type-item">type 3</li>
           </ul>
 
-section.section-browser
+section.section-browse.hidden
   .wrapper
     h2.section-title Browse by property type
     .product-list-wrapper
-      ul.product-list.js-slider
-        each i in Array(6)
+      ul.product-list.js-slider-01
+        each i in Array(12)
           li.product-item
-            a.product-link(href='#')
+            a.product-link(href='/detail/')
               figure.product-image
                 img(src='https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=' alt='')
-              h3.name Ten san pham
-              p.detail chi tiet
+              h3.name Melia Ho Tram Beach Resort
+              p.detail Thành phố Vũng Tàu
 
-section.section-banner
+section.section-banner.hidden
   .wrapper
     h2.section-title Cities
     .banner-wrapper
@@ -35,14 +35,14 @@ section.section-banner
         each i in Array(2)
           a.banner-item(href='#')
             h3.banner-title Ho Chi Minh City
-            p.banner-description mo ta chi tiet
+            p.banner-description 425 khách sạn
       .banner-list
         each i in Array(3)
           a.banner-item(href='#')
-            h3.banner-title Ho Chi Minh City
-            p.banner-description mo ta chi tiet
+            h3.banner-title Da Lat
+            p.banner-description 398 khách sạn
 
-section.section-news
+section.section-news.hidden
   .wrapper
     h2.section-title Daily news
     .news-wrapper
@@ -52,12 +52,12 @@ section.section-news
             h3.news-title The top 5 cities for vegan travelers
             p.news-description Vegan-friendly eateries abound in these travel destinations…
 
-section.section-ads
+section.section-ads.hidden
   .wrapper
     h2.hidden tieu de quang cao
     img.banner-ads(src='/src/img/ads1.jpg' alt='tieu de quang cao' width='1200' height='339')
 
-section.section-news
+section.section-news.hidden
   .wrapper
     h2.section-title Daily news
     .news-wrapper

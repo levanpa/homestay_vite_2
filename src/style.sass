@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap')
 @import css/config.sass
 
 // reset
@@ -10,7 +10,9 @@
   line-height: normal
   letter-spacing: 0
   box-sizing: border-box
-  font-size: 16px
+  font: inherit
+  font-size: 100%
+  border: 0
 
 a
   color: #333
@@ -26,14 +28,27 @@ input, button, select, textarea
   appearance: none
   border: none
 
+iframe
+  border: none
+
+address
+  font-style: normal
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+
 // setup
 html
   scroll-behavior: smooth
 
 body
+  max-height: 99999em
   font-family: $primary-font
   font-size: 16px
   line-height: 1.4
+  word-break: break-word
+  -webkit-text-size-adjust: none
+  -moz-text-size-adjust: none
 
 .hidden
   display: none
@@ -46,8 +61,33 @@ img
   max-width: 100%
   height: auto
 
-// header
-@import css/header.sass
+section
+  padding: 30px 0
 
-// home
+// mixins
+=fontawesome
+  font-style: normal
+  font-variant: normal
+  line-height: 1
+  text-rendering: auto
+  font-family: 'Font Awesome 6 Free'
+=abs-xy
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+=abs-x
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+=abs-y
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+@import css/header.sass
+@import css/footer.sass
+@import css/slick.sass
+
 @import css/home.sass
+@import css/detail.sass

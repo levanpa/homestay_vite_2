@@ -1,12 +1,29 @@
 import '/src/style.css'
-// import $ from 'jquery'
-// import 'slick-carousel'
 
-// $(function () {
-// let slider = $('.js-slider')
-// slider.slick()
+function calcScoreBar() {
+  let bar = $('[class~="js-bar"]')
+  bar.each((index, item) => {
+    let value = $(item).data("bar-value")
+    $(item).find('> span').css({
+      width: `${value}%`,
+    })
+  })
+}
 
-// slider.slick({
-//   slidesToShow: 4,
-// }
-// })
+function slider() {
+  let productImages = $('.js-product-images')
+  if (productImages.length){
+    productImages.slick()
+  }
+  let productSlider01 = $('.js-slider-01')
+  if (productSlider01.length){
+    productSlider01.slick({
+      slidesToShow: 6
+    })
+  }
+}
+
+$(function () {
+  slider()
+  calcScoreBar()
+})

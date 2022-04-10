@@ -22,20 +22,21 @@ npm run dev
 
 
 --- tính năng
-- tìm kiếm theo: địa điểm
-- dẫn link tới fb
+- tìm kiếm theo: địa điểm, giá phòng
 - đặt trước
 - đăng kí theo sdt, họ tên
-- nút messenger
+- nhắn tin messenger
 - thanh toán chuyển khoản
 - thanh toán khi nhận phòng
 - đặt cọc?
+- tính giá theo số ngày đêm ở
+- share fb
 
 
 
 --- trang
 - trang chủ
-- trang chi tiết sp
+- trang chi tiết sp: pc
 - trang quản lý phòng đã đặt
 - trang thanh toán
 - trang user
@@ -50,3 +51,22 @@ npm run dev
 - số giường
 - tiện nghi? --- máy lạnh, tivi, tủ lạnh, ban công
 
+
+--- chi tiết sp
++ slide ảnh
++ giá
++ mô tả
++ số giường ngủ
++ diện tích phòng
++ tien nghi
++ khu vuc nổi bật lân cận
++ dia chi
++ map
++ đánh giá nhận xét (fake)
+
+
+
+- khẩu trang
+- kim chỉ màu xanh quân đội
+- bình giữ nhiệt mini nhét túi?
+- tool đa năng?

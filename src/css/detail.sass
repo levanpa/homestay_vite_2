@@ -1,0 +1,337 @@
+=section-title
+  margin-bottom: 30px
+  font-weight: 700
+  font-size: 24px
+  color: $color4
+
+.rating
+  display: flex
+  margin-bottom: 5px
+  i
+    color: #ffd726
+
+.product-detail-container
+  display: flex
+  flex-wrap: wrap
+  max-width: 1200px
+  margin: 0 auto 50px
+  .book-button
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 200px
+    height: 40px
+    margin-bottom: 10px
+    background-color: $color3
+    color: #fff
+    font-weight: 700
+    border-radius: 8px
+  .article-product-detail
+    flex: 0 0 770px
+    margin-right: 30px
+  .sidebar
+    flex: 0 0 400px
+
+  .product-images-wrapper
+    padding: 30px 0
+  .product-images
+    width: 770px
+  .top-info
+    margin-bottom: 20px
+    padding-bottom: 10px
+    border-bottom: 1px solid #ccc
+  .product-name
+    margin-bottom: 5px
+    font-weight: 700
+    font-size: 25px
+    color: #555
+  .name-alt
+    margin-bottom: 5px
+    color: #777
+    font-size: 14px
+    font-weight: 700
+  .address
+    display: flex
+
+    color: #555
+    i
+      margin-right: 5px
+    address
+      font-size: 14px
+
+  .product-info-wrapper
+    padding-bottom: 20px
+    margin-bottom: 30px
+    border-bottom: 1px solid #ccc
+    .product-price
+      display: block
+      margin-bottom: 10px
+      font-size: 28px
+      color: red
+      font-weight: 500
+    .product-description
+      margin-bottom: 20px
+    .product-map
+      width: 100%
+      height: 400px
+
+  .utility-wrapper
+    padding-bottom: 20px
+    margin-bottom: 30px
+    border-bottom: 1px solid #ccc
+    .utility-title
+      +section-title
+    .inner-wrapper
+      display: flex
+    .basic-info
+      flex: 0 0 290px
+      li
+        display: flex
+        gap: 15px
+        margin-bottom: 15px
+        padding-left: 18px
+        position: relative
+        &::before
+          content: "."
+          font-weight: 700
+          font-size: 30px
+          position: absolute
+          left: 0
+          top: -18px
+      p
+        min-width: 100px
+        &::after
+          content: ":"
+      span
+        font-weight: 600
+    .utility-list
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-end
+      gap: 20px
+    .utility-item
+      display: inline-flex
+      justify-content: center
+      text-align: center
+      width: 145px
+      min-height: 100px
+      padding-top: 46px
+      position: relative
+      i
+        +abs-x
+        top: 0
+        font-size: 30px
+
+  .nearby-wrapper
+    padding-bottom: 20px
+    .nearby-title
+      +section-title
+    .nearby-list
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      max-height: 200px
+      margin-bottom: 20px
+      gap: 0 40px
+    .nearby-item
+      margin-bottom: 10px
+      padding-left: 40px
+      padding-bottom: 10px
+      border-bottom: 1px solid #ccc
+      position: relative
+      i
+        position: absolute
+        top: calc(50% - 5px)
+        transform: translateY(-50%)
+        left: 0
+        color: $color3
+        font-size: 20px
+      .name
+        font-size: 14px
+        font-weight: 500
+      .note
+        color: #555
+        font-size: 13px
+
+  .related-wrapper
+    width: 100%
+    padding-top: 60px
+    .book-button
+      width: 120px
+    .banner-ads
+      display: flex
+    .related-title
+      margin-bottom: 5px
+      color: $color4
+      font-size: 18px
+      font-weight: 700
+    .related-description
+      margin-bottom: 15px
+      color: $color2
+      font-size: 14px
+    .related-list
+      > li
+        margin-bottom: 40px
+    .related-item
+      display: flex
+      gap: 20px
+      border: 1px solid #ccc
+      border-radius: 8px
+      overflow: hidden
+      .left
+        height: 150px
+      .middle
+        flex: 1
+        padding: 10px 20px 10px 0
+        border-right: 1px solid #ccc
+      .right
+        display: none
+        padding: 10px 20px 0 0
+    .related-image
+      display: inline-block
+      width: 150px
+      height: 100%
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .related-name
+      display: inline-block
+      font-size: 20px
+      font-weight: 500
+    .address
+      font-size: 14px
+    .price
+      display: block
+      margin-bottom: 10px
+      font-size: 20px
+      color: red
+      font-weight: 500
+
+// feedback-wrapper
+.feedback-wrapper
+  background-color: #fafafa
+  border: 1px solid #ccc
+  box-shadow: 3px 5px 10px #ccc
+  .overall-feedback
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 100px
+    padding: 40px
+    border-bottom: 1px solid #ccc
+    .overall-score
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      flex: 0 0 150px
+      height: 150px
+      line-height: 1
+      color: #fff
+      background-color: #4483dc
+      border: 6px solid #1961c7
+      border-radius: 100px
+      overflow: hidden
+      font-size: 50px
+      font-weight: 600
+      position: relative
+      &::before
+        content: " "
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border: 5px solid #fff
+        border-radius: 100px
+    .score-detail
+      > li
+        display: flex
+        align-items: center
+        font-weight: 500
+        &:not(:last-child)
+          margin-bottom: 15px
+    .name
+      width: 100px
+      margin-right: 20px
+    .bar
+      border-radius: 10px
+      width: 400px
+      height: 10px
+      background-color: #eee
+      margin-right: 10px
+      position: relative
+      >span
+        +abs-y
+        left: 0
+        width: 100px
+        height: 100%
+        background-color: $color4
+        border-radius: 10px 0 0 10px
+    .counter
+      color: $color4
+  .customer-feedback
+    .feedback-list
+      border-radius: 8px
+    .feedback-item
+      display: flex
+      flex-direction: column
+      padding: 30px 40px
+      border-bottom: 1px solid #ccc
+    .feedback-user
+      display: flex
+      gap: 20px
+      margin-bottom: 30px
+    .user-image
+      width: 64px
+      height: 64px
+      border-radius: 32px
+      border: 1px solid #ccc
+      box-shadow: 0 5px 8px #aaa
+      overflow: hidden
+    .user-info
+      padding-top: 10px
+    .user-name
+      font-weight: 700
+    .feedback-date
+      color: #444
+      font-size: 13px
+      letter-spacing: .08em
+    .feedback-score
+      display: inline-flex
+      width: fit-content
+      margin-bottom: 20px
+      padding: 5px 20px 3px 40px
+      position: relative
+      border-radius: 30px
+      overflow: hidden
+      color: #f16714
+      background-color: #e7f3fa
+      font-weight: 500
+      i
+        +abs-y
+        left: 16px
+    .feedback-tags
+      display: flex
+      flex-wrap: wrap
+      gap: 20px
+      margin-bottom: 20px
+    .tag
+      padding: 5px 20px
+      border-radius: 30px
+      overflow: hidden
+      color: #1499f1
+      background-color: #e7f3fa
+      font-size: 14px
+      font-weight: 700
+    .feedback-content
+      margin-bottom: 20px
+      margin-right: 20px
+      padding-bottom: 10px
+      border-bottom: 1px solid #ccc
+    .feedback-images
+      display: flex
+      flex-wrap: wrap
+      gap: 20px
+      > li
+        display: inline-flex

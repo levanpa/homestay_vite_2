@@ -1,0 +1,26 @@
+.slick-arrow
+  +fontawesome
+  +abs-y
+  width: 40px
+  height: 40px
+  border-radius: 40px
+  transition: opacity 0.25s ease
+  font-weight: 900
+  z-index: 1
+  text-indent: -9999px
+  cursor: pointer
+  &:hover
+    opacity: 0.8
+  &::after
+    +abs-xy
+    text-indent: 0
+    color: #767676
+    font-size: 20px
+.slick-next
+  right: 20px
+  &::after
+    content: "\f054"
+.slick-prev
+  left: 20px
+  &::after
+    content: "\f053"
