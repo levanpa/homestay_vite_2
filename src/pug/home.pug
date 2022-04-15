@@ -11,8 +11,12 @@ section.section-keyvisual
           i.date-icon.fa-solid.fa-calendar-days
           input.date-picker-input.js-date-picker(name='checkin-date' type='text' placeholder='Checkin - checkout')
 
-section.section-browse.hidden
+section.section-browse
   .wrapper
+    .covid-notice
+      i.fa-solid.fa-circle-info
+      p Một số điểm lưu ý khi thuê phòng trong tình hình dịch covid-19.
+      a.covid-notice-link(href="#") Xem thêm
     h2.section-title Browse by property type
     .product-list-wrapper
       ul.product-list.js-slider-01
@@ -20,11 +24,11 @@ section.section-browse.hidden
           li.product-item
             a.product-link(href='/detail/')
               figure.product-image
-                img(src='https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=' alt='')
+                img(src='https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg' alt='')
               h3.name Melia Ho Tram Beach Resort
               p.detail Thành phố Vũng Tàu
 
-section.section-banner.hidden
+section.section-banner
   .wrapper
     h2.section-title Cities
     .banner-wrapper
@@ -64,7 +68,7 @@ section.section-news.hidden
             h3.news-title The top 5 cities for vegan travelers
             p.news-description Vegan-friendly eateries abound in these travel destinations…
 
-section.section-products
+section.section-products.hidden
   .wrapper
     .sidebar
     .common-list

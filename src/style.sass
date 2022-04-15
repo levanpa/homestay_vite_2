@@ -69,26 +69,10 @@ section
 .wow
   visibility: hidden
 
-// mixins
-=fontawesome
-  font-style: normal
-  font-variant: normal
-  line-height: 1
-  text-rendering: auto
-  font-family: 'Font Awesome 6 Free'
-=abs-xy
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%,-50%)
-=abs-x
-  position: absolute
-  left: 50%
-  transform: translateX(-50%)
-=abs-y
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
++mobile
+  .wrapper
+    width: 100vw
+    padding: 0 15px
 
 @import css/header.sass
 @import css/footer.sass

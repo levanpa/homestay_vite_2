@@ -1,4 +1,4 @@
-import '/src/style.css'
+// import '/src/style.sass'
 
 function calcScoreBar() {
   let bar = $('[class~="js-bar"]')

@@ -47,16 +47,16 @@ npm run dev
 - trang chủ
 - trang chi tiết sp: pc
 - trang quản lý phòng đã đặt
-- trang thanh toán
-- trang user
-- trang đăng ký đăng nhập
+- trang thanh toán --- wait
+- trang user --- wait
+- trang đăng ký đăng nhập --- wait, cookies
 
 
 
 --- tìm kiếm theo
-- vị trí
-- ngày nhận phòng
-- ngày trả phòng
++ vị trí
++ ngày nhận phòng
++ ngày trả phòng
 - số giường
 - tiện nghi? --- máy lạnh, tivi, tủ lạnh, ban công
 
@@ -75,3 +75,7 @@ npm run dev
 
 
 
+--- build instructions
+- fix style
+- fix script
+- fix img path

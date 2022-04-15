@@ -30,12 +30,29 @@ footer
     margin-bottom: 15px
   .footer-link
     color: #ccc
-  .left
-    flex: 0 0 300px
-  .right
-    display: flex
-    justify-content: space-between
-    width: 100%
-    gap: 30px
-  .footer-column
-    flex: 0 0 calc(100% / 3)
+
++desktop
+  footer
+    .left
+      flex: 0 0 300px
+    .right
+      display: flex
+      justify-content: space-between
+      width: 100%
+      gap: 30px
+    .footer-column
+      flex: 0 0 calc(100% / 3)
+
++mobile
+  footer
+    .wrapper
+      flex-direction: column
+    .left
+      width: 100%
+    .footer-column:not(:last-child)
+      margin-bottom: 40px
+    .social-list
+      .social-link
+        display: flex
+    .footer-link
+      display: block

@@ -1,5 +1,4 @@
 @charset 'utf-8'
-@charset 'utf-8'
 
 =section-title
   margin-bottom: 30px
@@ -29,16 +28,9 @@
     color: #fff
     font-weight: 700
     border-radius: 8px
-  .article-product-detail
-    flex: 0 0 770px
-    margin-right: 30px
-  .sidebar
-    flex: 0 0 400px
 
   .product-images-wrapper
     padding: 30px 0
-  .product-images
-    width: 770px
   .top-info
     margin-bottom: 20px
     padding-bottom: 10px
@@ -87,7 +79,6 @@
     .inner-wrapper
       display: flex
     .basic-info
-      flex: 0 0 290px
       li
         display: flex
         gap: 15px
@@ -126,16 +117,8 @@
         font-size: 30px
 
   .nearby-wrapper
-    padding-bottom: 20px
     .nearby-title
       +section-title
-    .nearby-list
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
-      max-height: 200px
-      margin-bottom: 20px
-      gap: 0 40px
     .nearby-item
       margin-bottom: 10px
       padding-left: 40px
@@ -211,6 +194,53 @@
       color: red
       font-weight: 500
 
++desktop
+  .product-detail-container
+    .article-product-detail
+      flex: 0 0 770px
+      margin-right: 30px
+    .product-images
+      width: 770px
+    .utility-wrapper
+      .basic-info
+        flex: 0 0 290px
+    .nearby-wrapper
+      padding-bottom: 20px
+      .nearby-list
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        max-height: 200px
+        margin-bottom: 20px
+        gap: 0 40px
+    .sidebar
+      flex: 0 0 400px
+
++mobile
+  .product-detail-container
+    .article-product-detail
+      padding: 0 15px
+    .product-images
+      width: 345px
+    .utility-wrapper
+      .inner-wrapper
+        flex-direction: column
+      .basic-info
+        margin-bottom: 10px
+      .utility-list
+        justify-content: center
+        gap: 15px
+      .utility-item
+        min-height: 70px
+        padding-top: 30px
+        i
+          font-size: 24px
+    .sidebar
+      padding: 0 15px
+    .related-wrapper
+      .related-list > li
+        margin-bottom: 20px
+
 // feedback-wrapper
 .feedback-wrapper
   background-color: #fafafa
@@ -228,6 +258,7 @@
       align-items: center
       justify-content: center
       flex: 0 0 150px
+      width: 150px
       height: 150px
       line-height: 1
       color: #fff
@@ -338,3 +369,22 @@
       gap: 20px
       > li
         display: inline-flex
+
+// +desktop
++mobile
+  .feedback-wrapper
+    .overall-feedback
+      flex-direction: column
+      gap: 50px
+      padding: 20px
+      .name
+        margin-right: 10px
+        font-size: 14px
+      .bar
+        width: 50vw
+    .customer-feedback
+      .feedback-item
+        padding: 20px
+      .feedback-tags,
+      .feedback-images
+        gap: 10px

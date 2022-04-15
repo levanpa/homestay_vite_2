@@ -59,7 +59,26 @@
 
 // section-browse
 .section-browse
-  // nho xoa
+  .covid-notice
+    width: fit-content
+    margin: 0 auto 40px
+    padding: 25px 35px 25px 70px
+    text-align: center
+    border: 1px solid #ccc
+    box-shadow: 0 4px 3px rgba(#000,0.05)
+    position: relative
+    > p
+      display: inline
+    > i
+      +abs-y
+      left: 30px
+      font-size: 30px
+      color: $color4
+  .covid-notice-link
+    margin-left: 7px
+    color: $color4
+    &:hover
+      text-decoration: underline
   .product-list
     .slick-arrow
       top: calc(50% - 42px)
@@ -78,6 +97,10 @@
     width: 100%
     height: 180px
     margin-bottom: 10px
+    > img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
 // section-banner
 .section-banner

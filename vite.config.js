@@ -14,9 +14,25 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'detail/index.html'),
+        home: resolve(__dirname, 'index.html'),
+        detail: resolve(__dirname, 'detail/index.html'),
+        style: resolve(__dirname, 'src/style.sass'),
+        script: resolve(__dirname, 'main.js'),
       },
+      // output: {
+      //   assetFileNames: (assetInfo) => {
+      //     let extType = assetInfo.name.split('.').at(1);
+      //     if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+      //       extType = 'img';
+      //     }
+      //     return `assets/${extType}/[name]-[hash][extname]`;
+      //   },
+      // },
     },
+    // resolve: {
+    //   alias: {
+    //     '/src/img': resolve(__dirname, '/assets/'),
+    //   },
+    // },
   },
 })
