@@ -17,11 +17,13 @@ section.section-browse
       i.fa-solid.fa-circle-info
       p Một số điểm lưu ý khi thuê phòng trong tình hình dịch covid-19.
       a.covid-notice-link(href="#") Xem thêm
+      button.close-button.js-close-button
+        i.fa-solid.fa-xmark
     h2.section-title Browse by property type
     .product-list-wrapper
-      ul.product-list.js-slider-01
+      .product-list.js-slider-01
         each i in Array(12)
-          li.product-item
+          .product-item
             a.product-link(href='/detail/')
               figure.product-image
                 img(src='https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg' alt='')
@@ -43,7 +45,7 @@ section.section-banner
             h3.banner-title Da Lat
             p.banner-description 398 khách sạn
 
-section.section-news.hidden
+section.section-news
   .wrapper
     h2.section-title Daily news
     .news-wrapper
@@ -53,12 +55,12 @@ section.section-news.hidden
             h3.news-title The top 5 cities for vegan travelers
             p.news-description Vegan-friendly eateries abound in these travel destinations…
 
-section.section-ads.hidden
+section.section-ads
   .wrapper
     h2.hidden tieu de quang cao
     img.banner-ads(src='/src/img/ads1.jpg' alt='tieu de quang cao' width='1200' height='339')
 
-section.section-news.hidden
+section.section-news
   .wrapper
     h2.section-title Daily news
     .news-wrapper

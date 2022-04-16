@@ -31,6 +31,9 @@
 
   .product-images-wrapper
     padding: 30px 0
+    .product-images:not(.slick-initialized)
+      .image:nth-child(n + 2)
+        display: none
   .top-info
     margin-bottom: 20px
     padding-bottom: 10px
@@ -221,7 +224,7 @@
     .article-product-detail
       padding: 0 15px
     .product-images
-      width: 345px
+      width: calc(100vw - 30px)
     .utility-wrapper
       .inner-wrapper
         flex-direction: column
@@ -236,10 +239,13 @@
         i
           font-size: 24px
     .sidebar
+      width: 100%
       padding: 0 15px
     .related-wrapper
       .related-list > li
         margin-bottom: 20px
+      .banner-ads > img
+        width: 100%
 
 // feedback-wrapper
 .feedback-wrapper
@@ -378,6 +384,7 @@
       gap: 50px
       padding: 20px
       .name
+        width: 90px
         margin-right: 10px
         font-size: 14px
       .bar
@@ -388,3 +395,6 @@
       .feedback-tags,
       .feedback-images
         gap: 10px
+      .feedback-content
+        margin-right: 0
+        text-align: justify

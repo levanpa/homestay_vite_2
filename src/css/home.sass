@@ -5,6 +5,8 @@
 .section-title
   margin-bottom: 30px
   font-size: 20px
+  font-weight: 700
+  color: #2683fb
 
 // section-keyvisual
 .section-keyvisual
@@ -62,18 +64,29 @@
   .covid-notice
     width: fit-content
     margin: 0 auto 40px
-    padding: 25px 35px 25px 70px
+    padding: 25px 70px 25px 80px
     text-align: center
     border: 1px solid #ccc
     box-shadow: 0 4px 3px rgba(#000,0.05)
     position: relative
     > p
       display: inline
-    > i
+    .fa-circle-info
       +abs-y
-      left: 30px
       font-size: 30px
-      color: $color4
+      left: 30px
+      color: #ffc925
+    .close-button
+      width: 60px
+      height: 60px
+      +abs-y
+      right: 5px
+      font-size: 30px
+      color: #5b5b5b
+      cursor: pointer
+      transition: background-color 0.25s ease
+      &:hover
+        background-color: #eaeaea
   .covid-notice-link
     margin-left: 7px
     color: $color4
@@ -82,6 +95,9 @@
   .product-list
     .slick-arrow
       top: calc(50% - 42px)
+    &:not(.slick-initialized)
+      .product-item:nth-child(n + 2)
+        display: none
   .product-item
     width: 200px
     padding: 0 10px
