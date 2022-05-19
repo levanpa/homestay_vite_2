@@ -14,8 +14,13 @@ npm run dev
 
 
 --- paaaa
-- khẩu trang
-- kim chỉ màu xanh quân đội
+- 2 hộp khẩu trang y tế
+- 1 cuộn kim chỉ (màu xanh lá hoặc đen)
+- 1tr tiền mặt
+- ít trái cây
+- cái hộp coolmate
+- 1 bịch xà phòng giặt đồ loại nhỏ bằng bàn tay thôi
+
 - bình giữ nhiệt mini nhét túi?
 - tool đa năng?
 - tai nghe?
@@ -31,13 +36,13 @@ npm run dev
 
 
 --- tính năng
-- tìm kiếm theo: địa điểm, giá phòng
-- đặt trước
+- tìm kiếm theo: địa điểm, ngày checkin - checkout, số phòng
+- đặt trước --- wait
 - đăng kí theo sdt, họ tên
 - nhắn tin messenger
 - thanh toán chuyển khoản
-- thanh toán khi nhận phòng
-- đặt cọc?
+- thanh toán khi nhận phòng --- wait
+- đặt cọc --- wait
 - tính giá theo số ngày đêm ở
 - share fb
 
@@ -79,3 +84,44 @@ npm run dev
 - fix style
 - fix script
 - fix img path
+
+
+--- database
+! HOMESTAYS
+- name
+- name_en - name in English
+- address
+- images[path, path,...]
+- price
+- location[latitide, longitude]
+- description
+- rooms
+- surface
+- facility[tivi, freezer,  hair dryer, minibar,...]
+- basic_info[balcony, children, view,...]
+- nearby[] 
+- rating[80,10,7,3,0]
+
+!COMMENT
+- name
+- avatar
+- content
+- tags[]
+- date
+- rate
+- images[]
+
+
+--- wp
+- install mysql
+- install php 7
+- install xampp
+- install wp
+
+
+
+
+--- strapi
+npx create-strapi-app@latest homiestay_backend --quickstart
+- api link
+http://localhost:1337/api/homestays/1 
