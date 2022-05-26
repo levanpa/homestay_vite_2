@@ -124,16 +124,19 @@
     .slick-arrow
       top: calc(50% - 42px)
     &:not(.slick-initialized)
+      min-height: 296px
       .product-item:nth-child(n + 2)
         display: none
   .product-item
     width: 200px
     padding: 0 10px
     .name
+      +limit-lines(2)
       margin-bottom: 5px
       font-size: 20px
       font-weight: 700
     .detail
+      +limit-lines(2)
       color: $color2
   .product-link
     display: block

@@ -15,7 +15,7 @@ mixin relatedItem()
       p.price 850.000 VND
       a.book-button(href='#') Book now
 
-.product-detail-container
+.product-detail-container.unique-detail-page
   article.article-product-detail
     .product-images-wrapper
       .top-info
@@ -25,13 +25,13 @@ mixin relatedItem()
           i(class="fa-solid fa-location-dot")
           address 7A/1 Bùi Thị Xuân, Phường 2, Phường 2, Đà Lạt, Tỉnh Lâm Đồng, Việt Nam, 670000
       .product-images.js-product-images
-        each i in Array(5)
-          img.image(src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640" alt="" width="770" height="479")
     .product-info-wrapper
       span.product-price 50.000.000 VND
       a.book-button(href='#') Book this room
       p.product-description Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat. Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.
-      iframe.product-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.764190505612!2d107.2311777!3d10.661684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317509f206a02233%3A0x9bd72a12c653bc88!2zVOG6oXAgaMOzYSBUaGluaA!5e0!3m2!1sen!2s!4v1648970817207!5m2!1sen!2s" allowfullscreen="" loading="lazy")
+      //- iframe.product-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.764190505612!2d107.2311777!3d10.661684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317509f206a02233%3A0x9bd72a12c653bc88!2zVOG6oXAgaMOzYSBUaGluaA!5e0!3m2!1sen!2s!4v1648970817207!5m2!1sen!2s" allowfullscreen="" loading="lazy")
+      //- iframe.product-map(src="" allowfullscreen="" loading="lazy")
+      .product-map
 
     .utility-wrapper.wow.fade-in(data-wow-offset="100")
       h3.utility-title Tiện nghi khách sạn
@@ -44,41 +44,10 @@ mixin relatedItem()
             p Diện tích
             span 80m2
         ul.utility-list
-          li.utility-item
-            i.fa-solid.fa-tv
-            span Truyền hình cáp
-          li.utility-item
-            i.fa-solid.fa-tv
-            span Bàn làm việc
-          li.utility-item
-            i.fa-solid.fa-tv
-            span Máy sấy tóc
-          li.utility-item
-            i.fa-solid.fa-tv
-            span Minibar
-          li.utility-item
-            i.fa-solid.fa-tv
-            span Tủ lạnh
-          li.utility-item
-            i.fa-solid.fa-tv
-            span Phòng tắm vòi sen
 
     .nearby-wrapper.wow.fade-in(data-wow-offset="100")
       h3.nearby-title Địa điểm lân cận
       ul.nearby-list
-        each i in Array(2)
-          li.nearby-item
-            i.fa-solid.fa-shop
-            h3.name Chợ Đà Lạt/ Chợ Đêm Đà Lạt
-            p.note Mua sắm &amp; Quà lưu niệm
-          li.nearby-item
-            i.fa-solid.fa-shop
-            h3.name Big C Dalat
-            p.note Mua sắm &amp; Quà lưu niệm
-          li.nearby-item
-            i.fa-solid.fa-shop
-            h3.name Cáp treo Đà Lạt
-            p.note Hoạt động &amp; Trò chơi
 
   aside.sidebar
     .related-wrapper

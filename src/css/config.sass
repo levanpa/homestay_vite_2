@@ -34,3 +34,11 @@ $primary-font: 'Open Sans', sans-serif
 =mobile
   @media only screen and (max-width: 767.98px)
     @content
+
+=limit-lines($lines)
+  display: -webkit-box
+  -webkit-line-clamp: $lines
+  line-clamp: $lines
+  text-overflow: ellipsis
+  -webkit-box-orient: vertical
+  overflow: hidden
